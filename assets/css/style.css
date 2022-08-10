@@ -65,7 +65,7 @@
   }
   
   header nav ul li a {
-    padding: 10px 15px;
+    padding: 15px 15px;
     font-size: 20px;
     text-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
@@ -304,5 +304,15 @@
     background: var(--tertiary-color);
   }
 
-  
+  /* CONTACT STYLES END */
 
+  /* MEDIA QUERY FOR TABLETS */
+
+  @media screen and (min-width: 768px) {
+
+  }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (min-width: 980px) {
+
+  }

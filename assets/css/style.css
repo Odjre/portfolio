@@ -2,7 +2,6 @@
     --primary-color: #d2deee;
     --secondary-color: #9a9ea5;
     --tertiary-color: #553e4e;
-    --white: #ffffff;
     --black: #000000;
 }
 
@@ -248,6 +247,10 @@
     padding-bottom: 20px;
   }
 
+  .contact-info h3 {
+    font-size: 20px;
+  }
+
   .contact-info .social-media ul {
     list-style: none;
   }
@@ -274,7 +277,7 @@
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: var(--secondary-color);
+    color: var(--black);
     width: 100%;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -309,10 +312,111 @@
   /* MEDIA QUERY FOR TABLETS */
 
   @media screen and (min-width: 768px) {
+    .contact-info {
+        display: flex;
+        justify-content: center;
+    }
 
+    .contact-info .address, .contact-info .social-media {
+        width: 50%;
+    }
   }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-  @media screen and (min-width: 980px) {
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS */
+    @media screen and (min-width: 980px) {
+        header {
+            justify-content: space-between;
+            align-items: center;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            width: 50%;
+        }
+
+        header nav ul {
+            padding-bottom: 10px;
+        }
+
+        .hero h2 {
+            width: 80%;
+        }
+
+        .section-title {
+            width: 60%;
+        }
+
+        .about-me {
+            width: 80%;
+        }
+
+        .about-me-img {
+            width: 80%;
+        }
+
+        .work {
+            justify-content: space-around;
+            align-items: stretch;
+        }
+
+        .app {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .social-media {
+            padding-left: 100px;
+        }
+
+        .address {
+            padding-right: 100px;
+        }
+
+        .contact-form {
+            width: 60%;
+        }
+
+        .contact-form button {
+            width: 40%;
+        }
+    }
+
+  /* MEDIA QUERY FOR LARGER DESKTOP SCREENS */
+  @media screen and (min-width: 1200px) {
+    header h1 {
+        width: 40%;
+    }
+
+    .hero h2 {
+        width: 70%;
+    }
+
+    .firstapp {
+        width: 80%;
+    }
+
+    .about-me-img {
+        width: 60%;
+    }
+
+    .about-me-text p {
+        text-align: center;
+    }
+
+    .contact-info {
+        justify-content: space-around;
+    }
+
+    .contact-info .address, .contact-info .social-media, .contact-form {
+        width: 32%;
+    }
+
+    .address {
+        order: 3;
+    }
 
   }

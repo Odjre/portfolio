@@ -333,7 +333,7 @@
         }
 
         header h1 {
-            width: 50%;
+            width: 40%;
         }
 
         header nav ul {
@@ -350,10 +350,24 @@
 
         .about-me {
             width: 80%;
+            justify-content: space-around;
         }
 
         .about-me-img {
-            width: 80%;
+            width: 45%;
+        }
+
+        .about-me-img img {
+          width: 100%;
+        }
+        
+        .about-me-text {
+          width: 45%;
+          padding-left: 30px;
+        }
+
+        .about-me-text h3 {
+          text-align: left;
         }
 
         .work {
@@ -387,9 +401,6 @@
 
   /* MEDIA QUERY FOR LARGER DESKTOP SCREENS */
   @media screen and (min-width: 1200px) {
-    header h1 {
-        width: 40%;
-    }
 
     .hero h2 {
         width: 70%;
@@ -397,14 +408,6 @@
 
     .firstapp {
         width: 80%;
-    }
-
-    .about-me-img {
-        width: 60%;
-    }
-
-    .about-me-text p {
-        text-align: center;
     }
 
     .contact-info {

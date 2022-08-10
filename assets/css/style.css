@@ -1,0 +1,304 @@
+:root {
+    --primary-color: #d2deee;
+    --secondary-color: #9a9ea5;
+    --tertiary-color: #553e4e;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--black);
+    font-family: 'Spectral', serif;
+  }
+
+ /* HEADER / NAV BAR STYLES START */
+  
+ header {
+    padding: 20px 35px 0 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-image: url('../images/beachtracks.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 30%;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    color: var(--black);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    width: 100%;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
+
+  header nav ul li a:hover {
+    background: var(--tertiary-color);
+    color: var(--white);
+    border-radius: 15px;
+    text-shadow: none;
+}
+  
+  /* HEADER / NAVBAR STYLES END */
+
+   /* FOOTER STYLES START */
+   footer {
+    background: var(--secondary-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h2 {
+    color: var(--black);
+    font-size: 20px;
+    margin: 0;
+  }
+  
+
+  /* END FOOTER STYLES */
+
+  /*  HERO STYLES START */
+
+  .hero {
+    background-image: url('../images/beachtracks.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 15px;
+    text-align: center;
+  }
+
+  /* HERO STYLES END */
+
+  /* SECTION TITLE STYLES START */
+  section h2 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+  
+  /* SECTION TITLE STYLES END */
+
+  /* MY WORK STYLES BEGIN */
+
+  #my-work {
+    background-color: var(--primary-color);
+  }
+
+  .work {
+    margin: 50px auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work a {
+    text-decoration: none;
+  }
+
+  .work a:visited {
+    color: var(--black);
+  }
+
+  .work img{
+    width: 100%;
+  }
+
+  .work article {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .work article:last-child {
+    padding-bottom: 0;
+  }
+
+  .work h3 {
+    font-size: 30px;
+  }
+
+  .work h4 {
+    font-size: 20px;
+  }
+
+  .work p {
+    font-size: 16px;
+  }
+
+  /*  MY WORK STYLES END */
+
+  /* ABOUT ME STYLES BEGIN */
+
+  #about-me {
+    background-color: var(--secondary-color);
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .about-me-img {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me-img img {
+    width: 50%;
+  }
+
+  .about-me-text h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about-me-text p {
+    font-size: 16px;
+  }
+
+  /* ABOUT ME STYLES END */
+
+  /* CONTACT STYLES BEGIN */
+
+  #contact {
+    background-color: var(--primary-color);
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-info address {
+    font-style: normal;
+  }
+
+  .contact-info .address, .contact-info .social-media, .contact-form {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .contact-info .social-media ul {
+    list-style: none;
+  }
+
+  .contact-info .social-media ul li {
+    display: inline-block;
+  }
+
+  .contact-info .social-media ul img {
+    padding: 8px 10px;
+  }
+
+  .contact-form h3 {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+  }
+
+  .contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--black);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+
+  .contact-form button:hover {
+    color:var(--primary-color);
+    background: var(--tertiary-color);
+  }
+
+  
+
